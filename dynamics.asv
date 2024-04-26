@@ -1,0 +1,17 @@
+%% Dynamics of spacecraft
+
+% spacecraft specifications
+h = 700000;
+
+t_orbit = 2 * pi * sqrt(h^3)
+
+J = [[124.531, 0, 0];
+     [0, 124.586, 0];
+     [0, 0, 0.704]];
+
+Td = [0.0001, 0.0001, 0.0001]';
+
+dt = 0.1;
+
+t_meas = 1500;
+
